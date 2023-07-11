@@ -18,10 +18,8 @@ class ProductController extends Controller
 
          $request->validate([
              'name'=>'required',
-            'category_id'=>'required',
              'price'=>'required|numeric',
             'description'=>'required',
-            'availabilty'=>'required',
 
          ]);
         Product::create([
